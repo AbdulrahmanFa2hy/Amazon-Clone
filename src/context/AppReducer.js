@@ -1,8 +1,8 @@
-export const getBasketTotal = (basket) => {
-  return basket.reduce((amount, item) => {
-    return amount + item.price;
-  }, 0);
-};
+// export const getBasketTotal = (basket) => {
+//   return basket.reduce((amount, item) => {
+//     return amount + item.price;
+//   }, 0);
+// };
 export const intialState = {
   user: "",
   basket: [],
