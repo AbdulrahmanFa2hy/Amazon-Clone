@@ -13,11 +13,15 @@ const Header = () => {
       <Link to={"/"}>
         <img className="logo" src={logo} alt="header logo" />
       </Link>
-      <div className="header-search">
-        <input className="header-searchInput" type="text" />
-        <img className="header-searchIcon" src={searchIcon} alt="search icon" />
-      </div>
       <div className="header-nav">
+        <div className="header-search">
+          <input className="header-searchInput" type="text" />
+          <img
+            className="header-searchIcon"
+            src={searchIcon}
+            alt="search icon"
+          />
+        </div>
         <Link to={(currentUser && "/logout") || "/login"}>
           <div className="header-option">
             <span className="header-optionLineOne">

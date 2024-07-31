@@ -13,13 +13,14 @@ const Product = ({ price, title, id, img, rating }) => {
       id: id,
     });
   };
-  console.log(basket);
   return (
     <div className="product">
       <div className="product-info">
         <div className="prodcut-title">{title}</div>
-        <small>$</small>
-        <strong>{price}</strong>
+        <div className="product-price">
+          <small>$</small>
+          <strong>{price}</strong>
+        </div>
         <div className="rating">
           {Array(rating)
             .fill()

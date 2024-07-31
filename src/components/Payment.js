@@ -39,7 +39,8 @@ const Payment = () => {
           {basket.map((e, i) => (
             <CartProduct
               title={e.title}
-              id={i}
+              id={e.id}
+              key={Math.random() * 1000}
               price={e.price}
               rating={5}
               img={e.img}

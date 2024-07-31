@@ -34,7 +34,7 @@ const Home = () => {
           id={Math.random() * 1000}
           img={img3}
           price={449}
-          title="Fujitsu ScanSnap iX1600 Wireless or USB High-Speed Cloud Enabled Document, Photo & Receipt Scanner with Large Touchscreen and Auto Document Feeder for Mac or PC, White"
+          title="Fujitsu ScanSnap iX1600 Wireless or USB High-Speed Cloud Enabled Document"
           rating={5}
         />
         <Product
@@ -48,7 +48,7 @@ const Home = () => {
           id={Math.random() * 1000}
           img={img5}
           price={239}
-          title="MeLE PCG02 Fanless Mini PC Stick Windows 11 Pro J4125 8GB/128GB Portable Mini Desktop Computer Stick Business & Home Video Support HDMI 4K 60Hz, BT4.2, 2.4G/5.8G Dual Band Wi-Fi, USB, Ethernet..."
+          title="MeLE PCG02 Fanless Mini PC Stick Windows 11 Pro J4125 8GB/128GB Portable Mini Desktop Computer Stick Business & Home Video Support HDMI 4K 60Hz"
           rating={5}
         />
       </div>

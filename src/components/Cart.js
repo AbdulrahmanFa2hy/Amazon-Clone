@@ -5,6 +5,7 @@ import { useAuth } from "../context/GlobalContext";
 import { Link } from "react-router-dom";
 import CartProduct from "./CartProduct";
 import { useNavigate } from "react-router-dom";
+import Subtotal from "./Subtotal";
 const Cart = () => {
   const navigate = useNavigate();
   const { currentUser, basket } = useAuth();
@@ -32,15 +33,16 @@ const Cart = () => {
               );
             })
           ) : (
-            <h2 className="alert-to-add" onClick={() => navigate("/")}>
+            <h2 className="alert-empty-basket" onClick={() => navigate("/")}>
               Add items to the basket!
             </h2>
           )}
         </div>
         <div className="right-side">
-          <div className="price">
+          <Subtotal />
+          <p>
             Subtotal ({basket.length} items): <strong>$0</strong>
-          </div>
+          </p>
           <div className="gift-checkbox">
             <input type="checkbox" name="gift" id="gift" />
             <label htmlFor="gift">This order contains a gift</label>

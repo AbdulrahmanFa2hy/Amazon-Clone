@@ -1,6 +1,7 @@
 .home-container {
   max-width: 1500px;
   overflow: hidden;
+  margin-top: 60px;
 }
 .home-img {
   width: 100%;

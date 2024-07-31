@@ -1,6 +1,6 @@
-/* .payment {
-  padding: 20px;
-} */
+.payment {
+  margin-top: 60px;
+}
 .payment-header {
   background-color: #eaeded;
   padding: 15px;
@@ -26,7 +26,6 @@ hr {
 }
 .payment-review-title {
   flex-grow: 3;
-  width: 600px;
 }
 .paymet-review-product {
   flex-grow: 1;
@@ -65,4 +64,16 @@ hr {
 }
 .payment-method .submit-btn:active {
   transform: scale(0.85);
+}
+@media screen and (max-width: 490px) {
+  .payment-address,
+  .payment-review,
+  .payment-method {
+    flex-direction: column;
+    padding: 20px 10px;
+    gap: 10px;
+  }
+  .payment-method-title {
+    margin: 0;
+  }
 }
