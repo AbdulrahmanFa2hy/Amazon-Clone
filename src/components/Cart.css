@@ -29,11 +29,18 @@ hr {
 }
 .alert-empty-basket {
   margin: 110px auto;
-  width: max-content;
   background-color: #f3f3f3;
-  padding: 25px 100px;
+  padding: 25px;
+  text-align: center;
   border-radius: 10px;
   cursor: pointer;
+  width: 80%;
+}
+@media screen and (max-width: 900px) {
+  .alert-empty-basket {
+    font-size: 14px;
+    padding: 10px;
+  }
 }
 .right-side {
   width: 30%;
