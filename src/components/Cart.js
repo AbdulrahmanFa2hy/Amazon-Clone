@@ -5,7 +5,7 @@ import { useAuth } from "../context/GlobalContext";
 import { Link } from "react-router-dom";
 import CartProduct from "./CartProduct";
 import { useNavigate } from "react-router-dom";
-import Subtotal from "./Subtotal";
+// import Subtotal from "./Subtotal";
 const Cart = () => {
   const navigate = useNavigate();
   const { currentUser, basket } = useAuth();
@@ -39,7 +39,7 @@ const Cart = () => {
           )}
         </div>
         <div className="right-side">
-          <Subtotal />
+          {/* <Subtotal /> */}
           <p>
             Subtotal ({basket.length} items): <strong>$0</strong>
           </p>
