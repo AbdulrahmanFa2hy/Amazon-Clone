@@ -1,0 +1,16 @@
+.continaer {
+  margin: 20px auto;
+}
+.logout-card {
+  text-align: center;
+  width: 300px;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+.logout-card button {
+  width: 100%;
+  margin: 15px 0;
+  padding: 5px;
+}
