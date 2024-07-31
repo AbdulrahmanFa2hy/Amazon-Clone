@@ -4,7 +4,7 @@ import "./Product.css";
 import { useAuth } from "../context/GlobalContext";
 
 const Product = ({ price, title, id, img, rating }) => {
-  const { dispatch, basket } = useAuth();
+  const { dispatch } = useAuth();
 
   const addToBasket = () => {
     dispatch({

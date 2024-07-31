@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { useAuth } from "../context/GlobalContext";
 import { Link } from "react-router-dom";
 import CartProduct from "./CartProduct";
-import axios from "./axios";
 import "./Payment.css";
 
 const Payment = () => {
