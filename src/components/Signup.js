@@ -24,7 +24,7 @@ const Signup = () => {
       await signup(emailRef.current.value, passwordRef.current.value);
       navigate("/");
     } catch {
-      setError("Failed to Sign in");
+      setError("Failed to Signup");
     } finally {
       setLoading(false);
     }

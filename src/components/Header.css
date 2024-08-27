@@ -4,7 +4,7 @@ header {
   align-items: center;
   background-color: #131921;
   width: 100%;
-  padding: 10px 20px;
+  padding: 20px;
   color: white;
   height: 60px;
   position: fixed;
@@ -27,20 +27,19 @@ header .logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 30px;
-  height: 25px;
+  height: 30px;
   width: 400px;
+  justify-self: flex-end;
 }
-
 .header-searchInput {
-  width: 96%;
+  width: 92%;
   height: 100%;
   padding: 5px;
   border: none;
   outline: none;
 }
 .header-searchIcon {
-  width: 4%;
+  width: 8%;
   min-width: 20px;
   height: 100%;
   padding: 5px;
@@ -49,20 +48,7 @@ header .logo {
 @media screen and (max-width: 900px) {
   .header-search {
     width: 200px;
-  }
-}
-@media screen and (max-width: 660px) {
-  .header-search {
-    width: fit-content;
     margin-right: 0;
-  }
-  .header-searchInput {
-    display: none;
-  }
-  .header-searchIcon {
-    width: 25px;
-    height: 25px;
-    border-radius: 4px;
   }
 }
 .header-nav {
@@ -89,6 +75,8 @@ header .logo {
 }
 .cart {
   position: relative;
+  width: min-content;
+  margin: auto;
 }
 .cart-img {
   width: 20px;
@@ -99,4 +87,55 @@ header .logo {
   bottom: -5px;
   right: -5px;
   font-size: 12px;
+}
+
+.nav-show-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  display: none;
+  z-index: 999;
+}
+.nav-show-btn svg {
+  color: #fff;
+  font-size: 25px;
+  width: 28px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 640px) {
+  .nav-show-btn {
+    display: block;
+  }
+  .header-nav {
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    position: fixed;
+    left: 0;
+    bottom: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: #131921;
+    transition: all 0.5s ease-in-out;
+  }
+  .header-nav.header-nav-toggle {
+    bottom: 0;
+  }
+  .header-search {
+    display: none;
+  }
+  .header-nav a {
+    background-color: #cd9042;
+    border-radius: 8px;
+    width: 70vw;
+    padding: 8px;
+    text-align: center;
+  }
+  .cart span {
+    position: absolute;
+    bottom: -10%;
+    right: -35%;
+    font-size: 12px;
+  }
 }
