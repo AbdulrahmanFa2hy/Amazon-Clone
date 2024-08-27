@@ -6,7 +6,6 @@ import shopingCart from "../images/icons/shopping-cart.png";
 
 import "./Header.css";
 import { useAuth } from "../context/GlobalContext";
-import { ImMenu3, ImMenu4 } from "react-icons/im";
 import { CgMenuRightAlt } from "react-icons/cg";
 
 const Header = () => {
